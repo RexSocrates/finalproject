@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page session="false"%>
 <html>
@@ -7,9 +8,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Home</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	rel="stylesheet">
+<title>通貨商進貨管理系統</title>
+
 <!-- Bootstrap Core CSS -->
 <link href="resources/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
@@ -38,9 +38,30 @@
     <![endif]-->
 </head>
 <body>
-	<%@include file="navbar.jspf"%>
-	<h1>Hello world!</h1>
-	<P>The time on the server is ${serverTime}.</P>
+	<div id="wrapper">
+
+		<%@include file="navbar.jspf"%>
+		
+		<div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">逾期請購單</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+	</div>
 
 	<!-- jQuery -->
 	<script src="resources/vendor/jquery/jquery.min.js"></script>
@@ -58,22 +79,5 @@
 
 	<!-- Custom Theme JavaScript -->
 	<script src="resources/dist/js/sb-admin-2.js"></script>
-
-	<script>
-		$(document).ready(function() {
-			$('.btn-hide').click(function() {
-				$('.table-hide').slideToggle("slow");
-				$('.pagination').slideToggle("slow");
-				$('.table-show').slideToggle("slow");
-			});
-			$("#check").click(function() {
-				if ($(this).text() == "搜尋講者") {
-					$(this).text("搜尋結束");
-				} else {
-					$(this).text("搜尋講者");
-				}
-				;
-			});
-		});
-	</script>
+</body>
 </html>

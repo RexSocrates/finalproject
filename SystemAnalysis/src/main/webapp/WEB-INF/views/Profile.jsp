@@ -38,33 +38,47 @@
     <![endif]-->
 </head>
 <body>
-	<div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-                <div class="login-panel panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">登入</h3>
-                    </div>
-                    <div class="panel-body">
-                        <fieldset>
-                            <div class="form-group">
-                                <center>
-                                    <!-- <input type="text" name=""> -->
-                                    <h1><i class="fa fa-barcode fa-fw"></i>請掃描工作證</h1>
-                                    <br>
-                                    <img src="resources/img/barcode-scanner.png">
-                                </center>
-                            </div>
-                            <form action="" method="post">
-                                <input id="password" type="hidden" name="userID" value="">
-                                <button type="submit" name="Button1" id="Button1" style="display:none"></button> 
-                            </form>
-                        </fieldset>
+	<div id="wrapper">
+
+		<%@include file="navbar.jspf"%>
+		
+		<div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header"><i class="fa fa-file-text-o fa-fw"></i>Profile</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <i class="fa fa-user fa-fw"></i>員工資料
+                        </div>
+                        <div>
+                            <center>
+                                <p></p>
+                                <p>員工編號: 12345</p>
+                                <p>員工名字: 陳常樂</p>
+                                <p>員工階級: 普通</p>
+                                <p>所屬部門: 採購部</p>
+                            </center>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- /.row -->
+            <div class="row">
+                
+            </div>
+            <!-- /.row -->
         </div>
-    </div>
+        <!-- /#page-wrapper -->
+
+	</div>
 
 	<!-- jQuery -->
 	<script src="resources/vendor/jquery/jquery.min.js"></script>
@@ -82,31 +96,5 @@
 
 	<!-- Custom Theme JavaScript -->
 	<script src="resources/dist/js/sb-admin-2.js"></script>
-
-	<script>
-        $(document).ready(function() {
-            var barcode="";
-            $(document).keydown(function(e) {
-
-                var code = (e.keyCode ? e.keyCode : e.which);
-                console.log("code:"+code);
-                if(code==13){// Enter key hit
-                    document.getElementById("password").value = barcode;
-                    $("#Button1").click();
-                }
-                else{
-                    barcode=barcode+String.fromCharCode(code);
-                }
-                if(code == 32){// space key hit
-                    var cc = document.getElementById('password').value;
-                    console.log("password:"+cc);
-                }
-            });
-
-        });
-
-        document.onkeydown = function (e) {
-             return false;
-        }
-    </script>
+</body>
 </html>
