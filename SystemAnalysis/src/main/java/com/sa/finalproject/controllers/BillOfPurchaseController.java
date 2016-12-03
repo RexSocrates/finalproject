@@ -115,7 +115,7 @@ public class BillOfPurchaseController {
 		return model;
 	}
 
-	@RequestMapping(value = "/", method = RequestMethod.POST)
+	@RequestMapping(value = "/123", method = RequestMethod.POST)
 	public ModelAndView deleteProduct(@ModelAttribute long bop_serial, Remark remark){
 		ModelAndView model = new ModelAndView("redirect:/billofpurchase");
 		RemarkDAO remarkDelete = (RemarkDAO) context.getBean("RemarkDAO");

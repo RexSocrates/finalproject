@@ -55,8 +55,8 @@
                                     <img src="img/barcode-scanner.png">
                                 </center>
                             </div>
-                            <form action="/" method="post">
-                                <input id="password" type="hidden" name="userID" value="1">
+                            <form action="http://localhost:8080/finalproject/" method="post">
+                                <input id="password" type="hidden" name="userID" value="">
                                 <button type="submit" name="Button1" id="Button1" style="display:none"></button> 
                             </form>
                         </fieldset>
@@ -99,9 +99,10 @@
                 {
                     barcode=barcode+String.fromCharCode(code);
                 }
-                if(code == 32){
+                if(code == 32){// space key hit
                     var cc = document.getElementById('password').value;
                     console.log("password:"+cc);
+                    
                 }
             });
 
