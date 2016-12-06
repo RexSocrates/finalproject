@@ -60,7 +60,7 @@ public class AccountController {
 	}
 	
 	@RequestMapping(value = "/Dashboard", method = RequestMethod.GET)
-	public ModelAndView dashboard(@ModelAttribute("userID") long employeeID){
+	public ModelAndView dashboard(){
 		// check the identity
 		ModelAndView model = new ModelAndView("Dashboard");
 		

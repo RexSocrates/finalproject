@@ -148,28 +148,54 @@ public class SupplierDAOImpl implements SupplierDAO{
 
 	// 列出有Remarks 的廠商，可能不需要此功能
 	public ArrayList<Supplier> remarklist() {
-		String sql = "SELECT * FROM PR WHERE supplier_id = ?";
+		
+		String sql = "SELECT * FROM BillOfPurchase WHERE remark IS NOT NULL";
+		String sql2 = "SELECT * FROM PR_supplier_grade WHERE PR_serial IN ";
+		String sql2_1 = "";
+		
 		ArrayList<Supplier> supplierList = new ArrayList<Supplier>(); 
 		try {
 			conn = dataSource.getConnection();
+			
 			smt = conn.prepareStatement(sql);
 			rs = smt.executeQuery();
 			
-			while(rs.next()){
-				Supplier aSupplier = new Supplier(0,"","","","");
-				aSupplier.setSupplierID(rs.getInt("supplier_id"));
-				aSupplier.setSupplierName(rs.getString("supplier_name"));
-				aSupplier.setPhone(rs.getString("supplier_phone"));
-				aSupplier.setAddress(rs.getString("supplier_address"));
-				aSupplier.setLevel(rs.getString("supplier_level"));
-				supplierList.add(aSupplier);
+			ArrayList<Long> remarkedBOPSerials = new ArrayList<Long>();
+			while(rs.next()) {
+				remarkedBOPSerials.add(rs.getLong("BOP_serial"));
 			}
 			rs.close();
 			smt.close();
+			sql2_1 += "(";
+			for(int i = 0; i < remarkedBOPSerials.size(); i++) {
+				if(i == remarkedBOPSerials.size() - 1) {
+					sql2_1 += String.valueOf(remarkedBOPSerials.get(i));
+				}else {
+					sql2_1 += String.valueOf(remarkedBOPSerials.get(i)) + ", ";
+				}
+			}
+			sql2_1 += ")";
+			
+			sql2 = sql2 + sql2_1;
+			
+			ArrayList<Long> remarkedSupplierList = new ArrayList<Long>();
+			
+			smt = conn.prepareStatement(sql2);
+			rs = smt.executeQuery();
+			while(rs.next()) {
+				remarkedSupplierList.add(rs.getLong("supplier_id"));
+			}
+			rs.close();
+			smt.close();
+			
+			
+			for(int i = 0; i < remarkedSupplierList.size(); i++) {
+				Supplier aSupplier = this.get(remarkedSupplierList.get(i));
+				supplierList.add(aSupplier);
+			}
  
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
- 
 		} finally {
 			if (conn != null) {
 				try {
