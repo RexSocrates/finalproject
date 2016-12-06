@@ -43,26 +43,26 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">登入</h3>
+                        <h3 class="panel-title">Please Sign In</h3>
                     </div>
                     <div class="panel-body">
-                        <fieldset>
-                            <div class="form-group">
-                                <center>
-                                    <!-- <input type="text" name=""> -->
-                                    <h1><i class="fa fa-barcode fa-fw"></i>請掃描工作證</h1>
-                                    <br>
-                                    <img src="resources/img/barcode-scanner.png">
-                                    <%-- <c:if test="${param.error != null}">
-							            <h2>Username or password wrong!</h2>
-							        </c:if> --%>
-                                </center>
-                            </div>
-                            <form action="" method="post">
-                                <input id="password" type="hidden" name="userID" value="">
-                                <button type="submit" name="Button1" id="Button1" style="display:none"></button> 
-                            </form>
-                        </fieldset>
+                        <form role="form" action="" method="post">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                </div>
+                                <!-- <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                    </label>
+                                </div> -->
+                                <!-- Change this to a button or input when using this as a form -->
+                                <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -85,31 +85,4 @@
 
 	<!-- Custom Theme JavaScript -->
 	<script src="resources/dist/js/sb-admin-2.js"></script>
-
-	<script>
-        $(document).ready(function() {
-            var barcode="";
-            $(document).keydown(function(e) {
-
-                var code = (e.keyCode ? e.keyCode : e.which);
-                console.log("code:"+code);
-                if(code==13){// Enter key hit
-                    document.getElementById("password").value = barcode;
-                    $("#Button1").click();
-                }
-                else{
-                    barcode=barcode+String.fromCharCode(code);
-                }
-                if(code == 32){// space key hit
-                    var cc = document.getElementById('password').value;
-                    console.log("password:"+cc);
-                }
-            });
-
-        });
-
-        document.onkeydown = function (e) {
-             return false;
-        }
-    </script>
 </html>
