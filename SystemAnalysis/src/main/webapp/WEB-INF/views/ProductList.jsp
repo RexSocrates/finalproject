@@ -78,195 +78,26 @@
                                         <th>廠商</th>
                                         <th>庫存</th>
                                         <th>狀態</th>
-                                        <th style="width: 104px">動作</th>
+                                        <th>動作</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="odd gradeA">
-                                        <td>001</td>
-                                        <td><p class="hideOverflow">Apple Lightning 8pin 原廠USB傳輸線</p></td>
-                                        <td>$349</td>
-                                        <td>Apple</td>
-                                        <td>89</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalChange">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>002</td>
-                                        <td><p class="hideOverflow">PETON USB3.1 Type-C 金屬色編織高速傳輸充電線(1M) </p></td>
-                                        <td>$190</td>
-                                        <td class="center">TTTTTT</td>
-                                        <td>78</td>
-                                        <td class="center">斷貨</td>
-                                        <td>
-                                            <button type="button" class="btn btn-info">供貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>003</td>
-                                        <td><p class="hideOverflow">ADATA Aluminum Lightning 編織充電傳輸線（玫瑰金）</p></td>
-                                        <td>$490</td>
-                                        <td class="center">ADATA</td>
-                                        <td>520</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>004</td>
-                                        <td><p class="hideOverflow">3DS USB充電線</td>
-                                        <td>$190</td></td>
-                                        <td class="center">ONPRO</td>
-                                        <td>43</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>005</td>
-                                        <td><p class="hideOverflow">Micro USB 橘色閃電 快速充電線 </p></td>
-                                        <td>$240</td>
-                                        <td class="center">HTC</td>
-                                        <td>200</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>006</td>
-                                        <td><p class="hideOverflow">PowerFalcon Quick Charge 2.0 4Port快速充電器25W</p></td>
-                                        <td>$799</td>
-                                        <td class="center">SONY</td>
-                                        <td>75</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>007</td>
-                                        <td><p class="hideOverflow">FLIR ONE 紅外線熱感應鏡頭 熱成像鏡頭 ANDROID 系統用</p></td>
-                                        <td>$9800</td>
-                                        <td class="center">FLIR</td>
-                                        <td>30</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>008</td>
-                                        <td><p class="hideOverflow">Chromecast HDMI 媒體串流播放器</p></td>
-                                        <td>$1390</td>
-                                        <td class="center">Google</td>
-                                        <td>70</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>009</td>
-                                        <td><p class="hideOverflow">美瞳手機自拍神器美顏補光燈RK12電池款環形手機燈</td>
-                                        <td>$299</td></td>
-                                        <td class="center">ONPRO</td>
-                                        <td>65</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>010</td>
-                                        <td><p class="hideOverflow">APPLE IPHONE lightning 磁吸轉接頭</p></td>
-                                        <td>$459</td>
-                                        <td class="center">ONPRO</td>
-                                        <td>10</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>011</td>
-                                        <td><p class="hideOverflow">SONY 藍牙立體聲喇叭 BSP10</td>
-                                        <td>$2747</td></td>
-                                        <td class="center">SONY</td>
-                                        <td>35</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>012</td>
-                                        <td><p class="hideOverflow">GoPro HERO5 Black</td>
-                                        <td>$15500</td></td>
-                                        <td class="center">GoPro</td>
-                                        <td>100</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>013</td>
-                                        <td><p class="hideOverflow">Twelve South HiRise Deluxe 2 iPhone 充電立架 -銀色</p></td>
-                                        <td>$1940</td>
-                                        <td class="center">Twelve South</td>
-                                        <td>60</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>014</td>
-                                        <td><p class="hideOverflow">Twelve South BookBook iPhone 6/6S Plus 復古書仿舊皮革保護套-棕色</p></td>
-                                        <td>$1980</td>
-                                        <td class="center">Twelve South</td>
-                                        <td>73</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="odd gradeA">
-                                        <td>015</td>
-                                        <td><p class="hideOverflow">Twelve South Compass 2 立架 - 金色</p></td>
-                                        <td>$1490</td>
-                                        <td class="center">Twelve South</td>
-                                        <td>90</td>
-                                        <td>供貨中</td>
-                                        <td>
-                                            <button type="button" class="btn btn-danger">斷貨</button>
-                                            <button type="button" class="btn btn-warning">修改</button>
-                                        </td>
-                                    </tr>
-
+                                    <c:forEach items="${productList}" var="product">
+                                        <tr class="odd gradeA">
+                                            <td>${product.id}</td>
+                                            <td><p class="hideOverflow">${product.name}</p></td>
+                                            <td>${product.price}</td>
+                                            <td>${product.supplier}</td>
+                                            <td>${product.inventory}</td>
+                                            <td>${product.isInTheMarket}</td>
+                                            <td>
+                                                <a class="btn btn-warning" href="updateProduct?id=${product.id}">修改</a>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>
                                 </tbody>
                             </table>
                             <!-- /.table-responsive -->
-                            
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -284,24 +115,22 @@
                         </div>
                         <form role="form" action="productList">
                             <div class="modal-body">
-                                    <div class="form-group">
-                                        <label>商品名稱</label>
-                                        <input class="form-control" placeholder="輸入商品名稱" required="required">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>商品價格</label>
-                                        <input class="form-control" placeholder="輸入商品價格" required="required">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>選擇廠商</label>
-                                        <select class="form-control">
-                                            <option value="1">Apple</option>
-                                            <option value="2">Sony</option>
-                                            <option value="3">HTC</option>
-                                            <option value="4">ADATA</option>
-                                            <option value="5">ONPRO</option>
-                                        </select>
-                                    </div>
+                                <div class="form-group">
+                                    <label>商品名稱</label>
+                                    <input class="form-control" placeholder="輸入商品名稱" name="productName" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label>商品價格</label>
+                                    <input class="form-control" placeholder="輸入商品價格" name="productPrice" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label>選擇廠商</label>
+                                    <select class="form-control" name="productSupplier">
+                                        <c:forEach items="${supplierList}" var="supplier">
+                                            <option value="supplierList.id">supplierList.name</option>
+                                        </c:forEach>
+                                    </select>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
