@@ -13,8 +13,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.sa.finalproject.entity.Product;
+import com.sa.finalproject.entity.Supplier;
 import com.sa.finalproject.DAO.ProductDAO;
 //import com.sa.finalproject.DAO.impl.ProductDAOImpl;
+import com.sa.finalproject.DAO.impl.SupplierDAOImpl;
 
 // tell the spring this is a controller(auto scan)
 @Controller
@@ -32,6 +34,11 @@ public class ProductController {
 		productList = productDAO.getAvailableList();
 		
 //		List<Product> productList = new ArrayList<Product>();
+		SupplierDAOImpl supplierDAO = (SupplierDAOImpl) context.getBean("supplierDAO");
+		for(int i = 0; i < productList.size(); i++) {
+			long supplierID = productList.get(i).getSupplierID();
+			Supplier supplier = supplierDAO.get(supplierID);
+		}
 		
 		return model;
 	}
